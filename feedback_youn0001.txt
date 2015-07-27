@@ -1,0 +1,191 @@
+CSE373 Spring 2015
+Homework 4 Feedback
+
+Student(s): twc5(CHUANG,TZU WEI) & youn0001(OUN,YI-CHING) 
+Grading administered by Johnson Goh
+Writeup & Style graded by the rest of the course staff
+
+Total (100 pts): 99
+Extra Credit: NONE
+
+===============================================================================
+Correctness (43 pts): 42
+===============================================================================
+
+**************** auto-grade (34 pts): 33
+
+15/16  HashTable_OA tests
+16/16  HashTable_SC tests
+2/2   Correlator functionality
+
+**************** hand-grade (9 pts): 
+
+5/5 HashTable_OA and HashTable_SC 
+    
+2/2 StringHasher 
+    
+2/2 Correlator: Efficient answer: No O(n^2) answers (should use only one iterator)
+
+
+
+===============================================================================
+Style (20 pts): 20
+===============================================================================
+
+15/15 HashTable.java
+    5/5 Commenting
+        1/1 Comment at the top of each file (author, brief description of class)
+        4/4 Comment at the top of each method, important field and/or complicated piece of code
+    6/6 Refactoring
+        2/2 HashTable initial size & resize factor
+        2/2 Appropriate code reuse & Avoid unnecessary if/else (boolean zen)
+        2/2 Unnecessary fields, such as having two fields for the same thing 
+    4/4 Otherwise Good Style
+        2/2 Descriptive class, method, variable names, using java convention of naming
+        2/2 Appropriate visibility specifier (public, private, etc.) for classes, methods, fields
+
+
+2/2 Correlator.java
+1/1 WordCount.java
+1/1 StringComparator.java
+1/1 StringHasher.java
+
+
+===============================================================================
+Writeup (37 pts):37
+===============================================================================
+
+0/0 #1
+6/6 #2
+    2/2 Test for both hashtables 
+    2/2 Properties NOT tested
+    2/2 Boundary case testing
+
+12/12 #3 
+    3/3 a) Experimental Setup 
+        1/1 Inputs used
+        1/1 Timing information 
+        1/1 Details needed to replicate experiments        
+    4/4 b) 
+        2/2 Graph (or table) of experimental results
+        2/2  Graph (or table) is properly labelled
+    5/5 c) Interpretation of result
+        2/2  Expectation & Reasoning
+        2/2 Result analysis: Agree with expectations? If not, why?
+        1/1  Best DataCounter
+
+9/9 #4
+    2/2 a) Brief description of hash functions
+    4/4 b)
+        3/3 Graph (or table) of experimental results
+        1/1 Graph (or table) is properly labelled
+    3/3 c) Interpretation of result: Agree with expectations?  
+    
+8/8 #5
+    2/2 Result of Shakespeare's work compared to Shakespeare's work
+    2/2 Result of Bacon's work compared to Bacon's work
+    2/2 Result of Shakespeare's work compared to Bacon's work
+    2/2 Conclusion based on the experiment
+
+0/0 #6 See Extra credit section below
+
+0/0 #7
+
+2/2 #8
+
+===============================================================================
+Extra credit completed: None
+===============================================================================
+
+Possible extra credit: 
+ALT_HASH (Alternate Hashing)
+EXC_WORD (Excluded Words)
+INTR_SORT (Introspective Sort)
+WORD_STEM (Word Stemming)
+WORD_COOCR (Word Co-Occurrence)
+ALT_CORR (Better Correlation)
+GREAT_REPORT (Over the top Report, experiments and analysis)
+
+
+===============================================================================
+Test Results:
+===============================================================================
+
+*** Imports:
+src/shake_n_bacon/Correlator.java:3:import java.io.IOException;
+src/shake_n_bacon/TestHash.java:3:import java.io.IOException;
+src/shake_n_bacon/TestHash.java:4:import java.util.Scanner;
+src/shake_n_bacon/WordCount.java:3:import java.io.IOException;
+
+***********************************************************************
+
+
+Grading for user CHUANG,TZU_twc5+OUN,YI-CHING_youn0001 ...
+
+---------------------------------------------
+Grading HASH_TABLE_OA
+---------------------------------------------
+Running General DataCounter Tests...
+[PASSED] Test Get Size Empty
+[PASSED] Test Get Count Empty
+[PASSED] Test Get size Insert Same
+[PASSED] Test Get count Insert Same
+[PASSED] Test Get size & Get count Insert Same
+[PASSED] Test Get size Insert sorted unique words
+[PASSED] Test Get count Insert sorted unique words
+[PASSED] Test Get size & Get count Insert sorted unique words
+[PASSED] Test Get size Insert reverse sorted unique words
+[PASSED] Test Get count Insert reverse sorted unique words
+[PASSED] Test Get size Insert unsorted unique words
+[PASSED] Test Get count Insert unsorted unique words
+[FAILED] Test Get Size & Get Count Empty
+Passed 12/13 tests (48 millisec)
+
+Running Hash Table OA Specific Tests...
+[PASSED] Test Large Insert unsorted duplicate words
+[PASSED] Test Large Insert sorted duplicate words
+Passed 2/2 tests (8 millisec)
+
+---------------------------------------------
+Grading HASH_TABLE_SC
+---------------------------------------------
+Running General DataCounter Tests...
+[PASSED] Test Get Size Empty
+[PASSED] Test Get Count Empty
+[PASSED] Test Get Size & Get Count Empty
+[PASSED] Test Get size Insert Same
+[PASSED] Test Get count Insert Same
+[PASSED] Test Get size & Get count Insert Same
+[PASSED] Test Get size Insert sorted unique words
+[PASSED] Test Get count Insert sorted unique words
+[PASSED] Test Get size & Get count Insert sorted unique words
+[PASSED] Test Get size Insert reverse sorted unique words
+[PASSED] Test Get count Insert reverse sorted unique words
+[PASSED] Test Get size Insert unsorted unique words
+[PASSED] Test Get count Insert unsorted unique words
+Passed 13/13 tests (38 millisec)
+
+Running Hash Table SC Specific Tests...
+[PASSED] Test Large Insert sorted duplicate words
+[PASSED] Test Large Insert unsorted duplicate words
+Passed 2/2 tests (8 millisec)
+
+---------------------------------------------
+Grading Using WordCount
+---------------------------------------------
+[PASSED] WordCount test for HASH_TABLE_OA 
+[PASSED] WordCount test for HASH_TABLE_SC 
+
+**********************************************************
+
+
+Grading Correlator...
+Test 1 (wonder.txt vs gilgamesh.txt)
+Correct result: 5.659001032375271E-4
+Student result: 5.65900103237527E-4
+Test 2 (gilgamesh.txt vs new.txt)
+Correct result: 6.866318765755382E-4
+Student result: 6.866318765755381E-4
+
+**********************************************************
+
